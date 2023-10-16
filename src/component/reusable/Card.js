@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 // import PropType from 'prop-types'
 import modelImage from "../../images/Models/modal1.jpg";
+import api from "../../api";
 
 const Card = () => {
   const [items, setItems] = useState([]);
-  const API = "https://fakestoreapi.com/products?limit=25";
+  const API =  api ;
+  console.log(API);
 
   const setFetching = async (url) => {
     try {
@@ -21,18 +23,14 @@ const Card = () => {
     setFetching(API);
   }, []);
   return (
-    <div className="flex flex-wrap">
-      {items.map((item) => (
+    <div className="flex flex-wrap border border-black">
+      {API.map((item) => (
         <div
-          style={{ height: "360px", width:"211px" }}
+          style={{ height: "360px", width: "211px" }}
           className="ml-2 mt-6 flex items-center flex-col mb-9 "
           key={item.id}
         >
-          <img
-            style={{ height: "150px"}}
-            src={item.image}
-            className="w-35"
-          />
+          <img style={{ height: "150px" }} src={item.image} className="w-35" />
           <div className="mt-1 h-12 px-3 w-60 align-middle text-baseline text-center">
             {/* Cropped Stay Groovy off white */}
             {item.title.substring(0, 37)}
