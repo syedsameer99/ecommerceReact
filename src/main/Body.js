@@ -11,7 +11,6 @@ const Body = () => {
       <div className="flex h-20">
         <SideBar />
         <MainContent
-          products={products}
           items={api.filter((item) =>
             products ? item.sizes.some((prod) => prod === products) : true
           )}

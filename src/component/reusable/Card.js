@@ -4,31 +4,6 @@ import modelImage from "../../images/Models/modal1.jpg";
 import api from "../../api";
 
 const Card = ({ itemsName }) => {
-
-  
-  // const [items, setItems] = useState([]);
-  // const [size, setSize] = useState("xs");
-  // const API = api;
-  // console.log("total items", itemsName);
-
-  // const setFetching = async (url) => {
-  //   try {
-  //     let res = await fetch(url);
-  //     let data = await res.json();
-  //     setItems(data);
-  //   } catch (error) {
-  //     console.error("Error");
-  //   }
-  //   console.log(setItems);
-  // };
-
-
-  // const filteredItems = itemsName.filter((item) => item.sizes.includes(size));
-  // console.log("filter", filteredItems);
-
-
-
-
   return (
     <div className="flex flex-wrap">
       {itemsName.map((item) => (
