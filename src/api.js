@@ -37,7 +37,7 @@ export default [
     title: "Cozy Pullover Hoodie",
     price: 29.99,
     image:
-      "https://ih1.redbubble.net/image.1680445980.3717/ssrco,mhoodie,mens,fafafa:ca443f4786,front,square_three_quarter,x1000-bg,f8f8f8.1.jpg",
+      "https://www.runningbare.com.au/productimages/magnify/1/965_6871_4328.jpg",
     sizes: ["m", "lg", "xl"],
   },
   {
@@ -47,7 +47,7 @@ export default [
     title: "Stylish Bomber Jacket",
     price: 59.99,
     image:
-      "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2081876/2017/9/28/11506592980216-Peter-England-Casuals-Men-Khaki-Solid-Bomber-9151506592980236-1.jpg",
+      "https://cdn.shopify.com/s/files/1/1464/5034/files/Hi-Lo-Black-Charcoal-15.jpg?v=1683237811&width=1536&height=1919&format=jpeg",
     sizes: ["xs", "s", "m", "xxl"],
   },
   {
@@ -66,7 +66,7 @@ export default [
     category: "Pants",
     title: "Classic Straight Leg Jeans",
     price: 44.99,
-    image: "https://example.com/jeans2.jpg",
+    image: "https://www.gapcanada.ca/webcontent/0051/860/779/cn51860779.jpg",
     sizes: ["xs", "m", "lg", "xxl"],
   },
   {
@@ -75,7 +75,8 @@ export default [
     category: "Dresses",
     title: "Chic A-Line Midi Dress",
     price: 54.99,
-    image: "https://example.com/dress2.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbx6Q4knOaJ1GAqsCcKc6D955FdRQJgmGFOA&usqp=CAU",
     sizes: ["s", "m", "lg", "xl"],
   },
   {
@@ -84,7 +85,8 @@ export default [
     category: "Sweatshirts",
     title: "Sporty Zip-Up Hoodie",
     price: 34.99,
-    image: "https://example.com/hoodie2.jpg",
+    image:
+      "https://www.fruit.com/dw/image/v2/ABAH_PRD/on/demandware.static/-/Sites-masterCatalog_FRUIT/default/dw90a40752/images/hi-res/PNG-CC21000-MHK-asset_model_front-19_Full-Body_3000px-x-4000px-psd.jpg?sw=335&sh=416&sm=fit&sfrm=png",
     sizes: ["xs", "s", "m", "lg", "xxl"],
   },
   {
@@ -93,7 +95,8 @@ export default [
     category: "Outerwear",
     title: "Leather Biker Jacket",
     price: 69.99,
-    image: "https://example.com/jacket2.jpg",
+    image:
+      "https://assets.ajio.com/medias/sys_master/root/20230624/e4ea/649663cfeebac147fcf20ce0/-1117Wx1400H-465324816-tan-MODEL.jpg",
     sizes: ["s", "lg", "xl", "xxl"],
   },
 ];

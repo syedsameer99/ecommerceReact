@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 // import PropType from 'prop-types'
 import modelImage from "../../images/Models/modal1.jpg";
 import api from "../../api";
+import PropTypes from "prop-types";
 
-const Card = () => {
+const Card = ({ itemsName }) => {
   const [items, setItems] = useState([]);
-  const API =  api ;
-  console.log(API);
+  const [size, setSize] = useState("xs");
+  const API = api;
+  console.log("sad", itemsName);
 
   const setFetching = async (url) => {
     try {
@@ -22,15 +24,21 @@ const Card = () => {
   useEffect(() => {
     setFetching(API);
   }, []);
+  const filteredItems = itemsName.filter((item) => item.sizes.includes(size));
+  console.log("filter", filteredItems);
   return (
-    <div className="flex flex-wrap border border-black">
-      {API.map((item) => (
+    <div className="flex flex-wrap">
+      {itemsName.map((item) => (
         <div
-          style={{ height: "360px", width: "211px" }}
-          className="ml-2 mt-6 flex items-center flex-col mb-9 "
+          style={{ height: "380px", width: "211px" }}
+          className="ml-2 mt-[35px] flex items-center flex-col mb-9 "
           key={item.id}
         >
-          <img style={{ height: "150px" }} src={item.image} className="w-35" />
+          <img
+            style={{ height: "250px" }}
+            src={item.image}
+            className="w-[350px]"
+          />
           <div className="mt-1 h-12 px-3 w-60 align-middle text-baseline text-center">
             {/* Cropped Stay Groovy off white */}
             {item.title.substring(0, 37)}
@@ -52,8 +60,8 @@ const Card = () => {
   );
 };
 
-// Card.prototype={
-//   image:PropType.string
-// }
+Card.prototype = {
+  itemsName: PropTypes.string,
+};
 
 export default Card;

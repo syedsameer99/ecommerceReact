@@ -1,13 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../component/reusable/Card";
+import api from "../api";
 
 const MainContent = () => {
-
+  const [totalItems, setTotalItems] = useState("10");
   return (
     <div className="w-full mt-6 ml-6">
-      <p className="pl-5 pt-5 text-base">16 Product(s) found</p>
+      <p className="pl-5 pt-16 text-sm">16 Product({totalItems}) found</p>
       <div className="flex flex-wrap ">
-        <Card />
+        <Card itemsName={api} />
       </div>
     </div>
   );
