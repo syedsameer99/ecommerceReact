@@ -15,7 +15,7 @@ const CustomButton = ({ name, buttonValue }) => {
       <button
         onClick={buttonClick}
         value={buttonValue}
-        className="border rounded-full py-2 px-3 font-thin mt-4 mr-2 text-xs bg-slate-200 text-black hover:bg-black hover:text-white"
+        className="border rounded-full py-2 px-3 font-thin mt-4 mr-2 text-[9px] bg-slate-200 text-black hover:bg-black hover:text-white   "
       >
         {name}
       </button>
