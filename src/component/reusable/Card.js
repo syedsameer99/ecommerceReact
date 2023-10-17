@@ -2,30 +2,33 @@ import React, { useEffect, useState } from "react";
 // import PropType from 'prop-types'
 import modelImage from "../../images/Models/modal1.jpg";
 import api from "../../api";
-import PropTypes from "prop-types";
 
 const Card = ({ itemsName }) => {
-  const [items, setItems] = useState([]);
-  const [size, setSize] = useState("xs");
-  const API = api;
-  console.log("sad", itemsName);
 
-  const setFetching = async (url) => {
-    try {
-      let res = await fetch(url);
-      let data = await res.json();
-      setItems(data);
-    } catch (error) {
-      console.error("Error");
-    }
-    console.log(setItems);
-  };
+  
+  // const [items, setItems] = useState([]);
+  // const [size, setSize] = useState("xs");
+  // const API = api;
+  // console.log("total items", itemsName);
 
-  useEffect(() => {
-    setFetching(API);
-  }, []);
-  const filteredItems = itemsName.filter((item) => item.sizes.includes(size));
-  console.log("filter", filteredItems);
+  // const setFetching = async (url) => {
+  //   try {
+  //     let res = await fetch(url);
+  //     let data = await res.json();
+  //     setItems(data);
+  //   } catch (error) {
+  //     console.error("Error");
+  //   }
+  //   console.log(setItems);
+  // };
+
+
+  // const filteredItems = itemsName.filter((item) => item.sizes.includes(size));
+  // console.log("filter", filteredItems);
+
+
+
+
   return (
     <div className="flex flex-wrap">
       {itemsName.map((item) => (
@@ -58,10 +61,6 @@ const Card = ({ itemsName }) => {
       ))}
     </div>
   );
-};
-
-Card.prototype = {
-  itemsName: PropTypes.string,
 };
 
 export default Card;
