@@ -1,39 +1,38 @@
 import React from "react";
 import CustomButton from "../component/reusable/CustomButton";
+const buttons = [
+  {
+    name: "XS",
+    value: "xs",
+  },
+  {
+    name: "S",
+    value: "s",
+  },
+  {
+    name: "M",
+    value: "m",
+  },
+  {
+    name: "ML",
+    value: "ml",
+  },
+  {
+    name: "L",
+    value: "lg",
+  },
+  {
+    name: "XL",
+    value: "xl",
+  },
+  {
+    name: "XXL",
+    value: "xxl",
+  },
 
-const SideBar = () => {
-  const buttons = [
-    {
-      name: "XS",
-      value: "xs",
-    },
-    {
-      name: "S",
-      value: "s",
-    },
-    {
-      name: "M",
-      value: "m",
-    },
-    {
-      name: "ML",
-      value: "ml",
-    },
-    {
-      name: "L",
-      value: "l",
-    },
-    {
-      name: "XL",
-      value: "xl",
-    },
-    {
-      name: "XXL",
-      value: "xxl",
-    },
-
-    // "XS", "S", "M", "ML", "L", "XL", "XXL"
-  ];
+  // "XS", "S", "M", "ML", "L", "XL", "XXL"
+];
+const SideBar = ({ setItemMenu, itemMenu }) => {
   return (
     <div className=" pl-4 ">
       <div className="ml-2 mt-[90px]">
@@ -44,7 +43,9 @@ const SideBar = () => {
               <CustomButton
                 key={item.id}
                 name={item.name}
-                buttonValue={item.value}
+                buttonValue = {item.value}
+                itemMenu={itemMenu}
+                setItemMenu={setItemMenu}
               />
             );
           })}

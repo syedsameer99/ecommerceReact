@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 
-const CustomButton = ({ name, buttonValue }) => {
+const CustomButton = ({ name, buttonValue, setItemMenu, itemMenu }) => {
   const [valueOutput, setValueOutput] = useState("");
 
   const buttonClick = (event) => {
     let a = event.target.value;
     setValueOutput(a);
-    console.log("state",valueOutput);
+    setItemMenu(a)
+    console.log("state", valueOutput);
     console.log("btn val", a);
+    console.log("btn val", itemMenu);
   };
 
   return (

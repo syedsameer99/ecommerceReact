@@ -7,7 +7,7 @@ export default [
     price: 19.99,
     image:
       "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_03_T28_5381M_UT_X_EC_0?$INTL_PDP_TAB$",
-    sizes: ["xs", "s", "m", "lg", "xl", "xxl"],
+    sizes: [ "m", "lg", "xl", "xxl"],
   },
 
   {
@@ -18,7 +18,7 @@ export default [
     price: 39.99,
     image:
       "https://cdn.shopify.com/s/files/1/0553/1589/0291/files/skinny-min.jpg?v=1642056668",
-    sizes: ["s", "m", "lg", "xl"],
+    sizes: ["s", "m","ml", "lg", "xl"],
   },
   {
     id: 3,
